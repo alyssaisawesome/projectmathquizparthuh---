@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Guess The Word</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="game.css">
+</head>
+<body>
+<h4 id="playername1"></h4><span id="score1"></span>
+<h4 id="playername2"></h4><span id="score2"></span>
+<div class="container">
+	<center>
+		<h2 style="color: white;">Math Quiz!</h2>
+		<h3 id="playerquestionturn"></h3>
+		<h3 id="playeranswerturn"></h3>
+        <div id="output" class="col-lg-6"></div>
+		<br>
+		<br>
+		<label>Send You Word: <b style="color: rgb(255, 255, 255)">Try putting word which has 5 or more alphabet</b></label>
+        <span>
+        <input placeholder="Number one" type="text" id="wordinput" class="form-control">
+        <br>
+        <br>
+        <br>
+        <select id="equationdropdown">
+          <option value="*">multiplied by</option>
+          <option value="/">divided by</option>
+          <option value="+">added by</option>
+          <option value="-">subtracted by</option>
+        </select> 
+        <br>
+        <br>
+        <br>
+        <input placeholder="Number two" type="text" id="wordinput" class="form-control">
+        </span>
+		<br>
+        <button onclick="sendword()" class="btn btn-info" style="width:30%">Submit</button>
+	</center>
+</div>
+
+<script src="game_page.js"></script>
+</body>
+</html>
